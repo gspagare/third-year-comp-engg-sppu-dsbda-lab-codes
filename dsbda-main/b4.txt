@@ -1,0 +1,21 @@
+Apache Spark: Apache Spark is an open-source distributed computing framework designed for big data processing and analytics. It provides a unified computing engine and supports various programming languages, including Scala, Java, Python, and R. Spark offers high-level APIs, libraries, and tools for building distributed data processing applications.
+
+Resilient Distributed Datasets (RDDs): RDDs are the fundamental data structure in Spark. They are immutable distributed collections of objects that can be processed in parallel across a cluster of machines. RDDs can be created from data stored in Hadoop Distributed File System (HDFS), local file systems, or any other data sources supported by Spark.
+
+SparkContext: The SparkContext is the entry point for interacting with Spark. It represents the connection to a Spark cluster and allows you to create RDDs, perform transformations, and trigger actions. It provides methods to configure various Spark settings, such as the cluster URL, application name, and resource allocation.
+
+Transformations: Transformations in Spark are operations applied on RDDs to create new RDDs. Transformations are lazy, meaning they do not immediately execute but instead build a logical execution plan. Examples of transformations include map, filter, reduceByKey, and join.
+
+Actions: Actions are operations that trigger the execution of the logical execution plan defined by the transformations and return results or write data to an external storage system. Actions cause the actual computation to take place. Examples of actions include collect, count, reduce, and saveAsTextFile.
+
+DataFrames and Datasets: DataFrames and Datasets are higher-level abstractions introduced in Spark that provide a structured and type-safe API for working with structured and semi-structured data. They provide a more efficient and optimized way to perform data processing compared to RDDs.
+
+Spark SQL: Spark SQL is a Spark module that provides a programming interface for working with structured data using SQL queries, DataFrame API, and Datasets. It allows you to seamlessly integrate SQL queries with Spark programs and perform SQL-like operations on structured data.
+
+Spark Streaming: Spark Streaming is a Spark component that enables real-time data processing and analytics. It ingests data in mini-batches and applies Spark transformations and actions on the streaming data. It allows you to build scalable, fault-tolerant streaming applications.
+
+Cluster Deployment Modes: Spark supports various cluster deployment modes, such as local mode, standalone mode, Apache Mesos, Hadoop YARN, and Kubernetes. Each deployment mode has its own configuration requirements and resource management capabilities.
+
+Development Environment: To write Spark programs in Scala, you need a development environment set up with Scala and Spark installed. You can use popular IDEs like IntelliJ IDEA or Eclipse with Scala plugins, or you can work with a Scala REPL (Read-Eval-Print Loop) like the Scala shell or the Databricks notebook environment.
+
+These are some of the key theory concepts related to writing a simple program in Scala using the Apache Spark framework. Understanding these concepts will help you get started with developing Spark applications and leveraging the capabilities of Spark for big data processing and analytics.
